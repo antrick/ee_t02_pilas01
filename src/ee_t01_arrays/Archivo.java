@@ -2,7 +2,7 @@ package ee_t01_arrays;
 import java.io.*;
 public class Archivo {
 	static int num[];
-	public static void menor(int []a){
+	public static void orden(int []a){
     	int aux;
      for(int i=0; i<num.length; i++){
     	 for(int j=i+1; j<num.length; j++){
@@ -43,6 +43,6 @@ public class Archivo {
 		  }*/
 		  
 		  System.out.println("\nSalida\n");
-		  menor(num);
+		  orden(num);
 	 }
 }
