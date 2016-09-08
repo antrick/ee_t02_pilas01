@@ -15,11 +15,11 @@ public class Main
     Pila p=new Pila(10);
    System.out.println("{[()]}"); 
    System.out.println("{[(])}");
-   System.out.println("{{[[(())]]}}"); 
+   System.out.println("{{[[(())]]}}\n"); 
    
-   //p.comparator("{[()]}");
+   p.comparator("{[()]}");
    p.comparator("{[(])}");
-   //p.comparator("{{[[(())]]}}");
+   p.comparator("{{[[(())]]}}");
    
   }
 }
