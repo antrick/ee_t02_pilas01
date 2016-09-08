@@ -56,12 +56,12 @@ package ee_t02_pilas01;
      return n;
     }
     public void comparator(String datos){
-      int i=0;
+      int i=0;  //()
         while(i<datos.length()){
          if(datos.charAt(i)=='('){
             push('(');
-            }else if(datos.charAt(i)==')' && peek()=='('){
-             if(!estavacio()){
+            }else if(datos.charAt(i)==')'){
+             if(!estavacio() && peek()=='('){
                 pop();
                 }else{
                  push(')');
@@ -71,8 +71,8 @@ package ee_t02_pilas01;
           if(datos.charAt(i)=='{'){
               push('{');
             }
-             else if(datos.charAt(i)=='}' && peek()=='{'){
-             if(!estavacio()){
+             else if(datos.charAt(i)=='}' ){
+             if(!estavacio() && peek()=='{'){
                 pop();
                 }else{
                  push('}');
@@ -82,8 +82,8 @@ package ee_t02_pilas01;
           if(datos.charAt(i)=='['){
             push('[');
             }
-            else if(datos.charAt(i)==']' && peek()=='['){
-             if(!estavacio()){
+            else if(datos.charAt(i)==']'){
+             if(!estavacio() && peek()=='['){
                 pop();
                 }else{
                  push(']');
@@ -98,6 +98,9 @@ package ee_t02_pilas01;
           }else{
             System.out.println("NO");
             }
+        if(!estavacio()){
+         tope=-1;
+        }
     }
 }
 // (()
